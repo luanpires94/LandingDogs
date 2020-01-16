@@ -1,0 +1,501 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    font-size: 26px;
+    color: #00CA88;
+    font-weight: bold;
+    margin: 10px 0 0 0;
+}
+@media (max-width: 768px){
+    header {
+        width: 83rem;
+    }
+}
+
+.header-paragraph {
+    color: #00CA88;
+}
+
+header nav a{
+    color: #00CA88;
+}
+header nav img {
+    position: relative;
+    top: -10px;
+    left: -13px;
+    width: 18px;
+}
+
+header nav span {
+    margin: 20px 20px;
+    font-weight: bold;
+}
+
+.header-logo{
+    display: flex;
+}
+
+.header-logo p {
+    font-size: 35px;
+    font-weight: bold;
+}
+.header-logo img {
+    position: relative;
+    top: -10px;
+    left: -9px;
+}
+
+.container-social{
+    display: inline-block;
+    flex-direction: column;
+    width: 10px;
+    margin-left: 10px;
+}
+@media (max-width: 768px){
+    .container-social {
+        margin-left: 71px;
+    }
+}
+
+.container-social hr {
+    margin-left: 20px;
+}
+.container-social img {
+    margin: 10px 0 10px 10px;
+}
+
+.container-social-paragraph{
+    transform: rotate(270deg);
+    color: #fff;
+    position: absolute;
+    font-weight: bold;
+    bottom: 199px;
+    left: -51px;
+    font-size: 20px;
+}
+@media (max-width: 768px){
+    .container-social-paragraph {
+        bottom: 8rem;
+        left: 11px;
+    }
+}
+
+.linha-vertical{
+    height: 100px;
+    border-left: 2px solid;
+    color: #FFFFFF;
+    position: absolute;
+    top: 212px;
+    left: 35px;
+}
+@media (max-width: 768px){
+    .linha-vertical {
+        top: 13rem;
+        left: 97px;
+    }
+}
+
+.container-main{
+    background-image: url(assets/dog-838281_1920.jpg);
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+}
+@media (max-width: 1024px){
+    .container-main {
+        width: 89rem;
+    }
+}
+@media (max-width: 768px){
+    .container-main {
+        width: 91rem;
+    }
+}
+.container-main::after { 
+    content:'';
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    opacity: 0.42;
+    background-color: #00B77A;
+    z-index: -1;
+}
+@media (max-width: 1024px){
+    .container-main::after {
+        width: 89rem;
+    }
+}
+@media (max-width: 768px){
+    .container-main::after {
+        width: 91rem;
+    }
+}
+
+.container-text-button{
+    text-align: center;
+    margin-top: -83px;
+    margin-left: -42px;
+}
+
+.button1{
+    background-color: #00CA88;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 20px;
+    font-size: 18px;
+    padding: 16px;
+    height: 50px;
+    margin: 0 20px;
+}
+
+.button2{
+    background-color: #fff;
+    color: #00CA88;
+    font-weight: bold;
+    border: none;
+    border-radius: 20px;
+    font-size: 18px;
+    width: 250px;
+    height: 50px;
+}
+.container-main-title {
+    font-size: 90px;
+    color: #fff;
+    font-weight: bold;
+}
+.container-main-paragraph {
+    font-size: 22px;
+    color: #fff;
+    width: 44vw;
+    margin-left: 25%;
+    text-align: center;
+}
+@media (max-width:1024px) {
+    .container-main-paragraph{
+        margin-left: 29rem;
+    }
+}
+@media (max-width: 768px){
+    .container-main-paragraph {
+        margin-left: 36rem;
+    }
+}
+
+.container-main-buttons {
+    margin: 20px;
+    font-weight: bold;
+}
+
+/*FIM DA PRIMEIRA SECTION */
+
+/*INICIO DA SECTION SOBRE */
+
+.sobre-block {
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+    height: 100vh;
+}
+@media (max-width: 1024px){
+    .sobre-block {
+        width: 85rem;
+        margin: 50px;
+    }
+}
+@media (max-width: 768px){
+    .sobre-block {
+        width: 80rem;
+        height: 50rem;
+    }
+}
+
+.sobre-title {
+    font-size: 64px;
+    color: #00CA88;
+    margin-top: 25px;
+    font-weight: bold;
+}
+@media (max-width: 768px){
+    .sobre-title {
+        font-size: 50px;
+        margin-top: 0;
+    }
+}
+
+.sobre-paragraph {
+    width: 450px;
+    color: #575757;
+    margin-top: 25px;
+}
+@media (max-width: 768px){
+    .sobre-paragraph {
+        font-size: 21px;
+    }
+}
+
+.sobre-input {
+    margin-top: 35px;
+    font-size: 24px;
+    border: none;
+    border-radius: 20px;
+    width: 293px;
+    height: 50px;
+    padding: 9px;
+    color: #fff;
+    background-color: #00CA88;
+    font-weight: bold;
+}
+
+.sobre-img-dog {
+    position: absolute;
+    z-index: 1;
+    margin: 100px 0 0 57px;
+}
+.sobre-img-circulo-top {
+    position: relative;
+    top: -5rem;
+    right: -20rem;
+}
+.sobre-img-circulo-mid {
+    position: relative;
+    left: 13rem;
+    bottom: -20rem;
+}
+
+.sobre-img-circulo-bottom {
+    position: relative;
+    bottom: -22rem;
+    left: -9rem;
+}
+@media (max-width: 768px){
+    .sobre-img-circulo-bottom {
+        bottom: -19rem;
+        left: 15rem;
+    }
+}
+
+.dog-block {
+    width: 50vw;
+}
+
+/* FIM DA SECTION SOBRE*/
+
+/* INICIO DA SECTION ADOTE*/
+
+.adote {
+    background-color: #00CA88;
+    width: 100vw;
+    height: 45rem;
+}
+@media (max-width: 1024px){
+    .adote {
+        width: 89rem;
+        padding: 10px;
+    }
+}
+@media (max-width: 768px){
+    .adote {
+        width: 91rem;
+        height: 50rem;
+    }
+}
+
+.adote-title {
+    color: #fff;
+    font-size: 64px;
+    margin-left: 100px;
+    padding: 40px;
+    font-weight: bold;
+}
+
+.adote-paragraph {
+    color: #fff;
+    width: 386px;
+    margin-left: 80px;
+}
+@media (max-width: 768px){
+    .adote-paragraph {
+        font-size: 23px;
+    }
+}
+
+.adote-img-circulo-left{
+    position: relative;
+    right: -45rem;
+    top: -21rem;
+}
+.adote-img-circulo-right{
+    position: relative;
+    right: -49rem;
+    top: -16rem;
+}
+.adote-img-circulo-bottom{
+    position: relative;
+    right: -50rem;
+    top: -8rem;
+}
+@media (max-width: 1024px){
+    .adote-img-circulo-bottom {
+        right: -53rem;
+    }
+}
+@media (max-width: 768px){
+    .adote-img-circulo-bottom {
+        right: -55rem;
+    }
+}
+
+.back-image-display {
+    display: flex;
+    justify-content: space-around;
+}
+
+.back-image {
+    width: 220px;
+    height: 220px;
+    border: solid #fff;
+    background-color: #00CA88;
+    position: relative;
+    top: -10rem;
+    border-radius: 10px;
+}
+
+
+.front-image {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    top: -24rem;
+    left: -1rem;
+}
+
+.block-dogs {
+    width: 210px;
+    border-radius: 10px;
+    height: 210px;
+}
+
+.adote-seta-direita {
+    position: relative;
+    top: -30rem;
+    right: -82.5rem;
+}
+@media (max-width: 1024px){
+    .adote-seta-direita {
+        right: -85rem;
+    }
+}
+@media (max-width: 768px){
+    .adote-seta-direita {
+        right: -87rem;
+    }
+}
+
+.adote-nomes {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    top: -24rem;
+    color: #fff;
+    font-weight: bold;
+}
+
+.adote-block-idade {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    top: -24rem;
+    color: #fff;
+}
+
+.adote-idade {
+    font-size: 20px;
+}
+@media (max-width: 768px){
+    .adote-idade {
+        font-size: 25px;
+    }
+}
+
+/* FIM DA SECTION ADOTE*/
+
+/* INICIO DO FOOTER*/
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    color: #00CA88;
+    width: 100vw;
+}
+@media (max-width: 1024px){
+    footer {
+        width: 87rem;
+    }
+}
+
+.linha-vertical-footer {
+    height: 200px;
+    border-left: 2px solid;
+    position: absolute;
+    left: 71rem;
+    bottom: -105rem;
+}
+@media (max-width: 1024px){
+    .linha-vertical-footer {
+        height: 210px;
+        left: 72rem;
+        bottom: -106rem;
+    }
+}
+@media (max-width: 768px){
+    .linha-vertical-footer {
+        height: 255px;
+        left: 71rem;
+        bottom: -129rem;
+    }
+}
+
+.contatos {
+    line-height: 3;
+    padding: 30px;
+    font-size: 20px;
+}
+@media (max-width: 768px){
+    .contatos {
+        font-size: 25px;
+    }
+}
+
+.contatos a {
+    color: #00CA88;
+}
+
+.contatos p {
+    font-weight: bold;
+}
+
+.contatos img {
+    margin: 5px;
+}
+
+.footer-image {
+    padding: 30px;
+}
+
+/* FIM DO FOOTER*/
